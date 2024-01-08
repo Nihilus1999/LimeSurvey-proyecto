@@ -8,6 +8,31 @@ Equipo conformado por:
 - Katherine Mendible
 - Maria Gonzalez
 
+## Instrucciones docker-compose.yaml
+
+1. Descargar las imágenes:
+```
+sudo apt update
+
+sudo docker pull acspri/limesurvey:latest
+sudo docker pull mariadb/server:latest    
+```
+2. Crear los directorios:
+```
+sudo su
+mkdir /Installs
+cd /Installs
+mkdir /limesurvey
+cd /limesurvey
+```
+3. Git pull:
+```
+git clone https://github.com/Nihilus1999/LimeSurvey-proyecto.git
+cd LimeSurvey-proyecto
+```
+4. Subir el contenedor
+```docker compose up -d```
+
 ## Descripción
 
 Para demostrar la persistencia de datos al dar de baja todos los servicios y volver a crearlos, puedes seguir los siguientes pasos:
