@@ -45,7 +45,7 @@ Esto debería mostrar los contenedores en ejecución para LimeSurvey y MariaDB.
 
 2. Detén y elimina los contenedores de LimeSurvey y MariaDB ejecutando el siguiente comando en el directorio donde se encuentra el archivo `docker-compose.yaml`:
 ```
-sudo docker-compose down
+sudo docker compose down
 ```
 Esto detendrá y eliminará los contenedores, pero los volúmenes montados que contienen los datos persistirán.
 
@@ -53,7 +53,7 @@ Esto detendrá y eliminará los contenedores, pero los volúmenes montados que c
 
 4. Vuelve a crear los servicios de LimeSurvey y MariaDB utilizando el comando:
 ```
-sudo docker-compose up -d
+sudo docker compose up -d
 ```
 Esto iniciará los contenedores nuevamente utilizando la configuración definida en el archivo `docker-compose.yaml`.
 
